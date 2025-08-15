@@ -1,6 +1,17 @@
+import Navbar from "./components/Navbar"
+
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Navbar/>
+      {/* Hero */}
+      {/* Trusted */}
+      {/* Services */}
+      {/* Our Work */}
+      {/* Team */}
+      {/* Contacs */}
+      {/* Footer */}
+    </div>
   )
 }
 
