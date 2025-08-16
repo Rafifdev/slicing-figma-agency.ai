@@ -1,14 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Manrope:wght@200..800&display=swap");
 @import "tailwindcss";
 
-@custom-variant dark :where(.dark, .dark *);
-
-*, html {
+*,
+html {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
 }
 
+@custom-variant dark (&:where(.dark, dark *));
+
 @theme {
-  --color-primary: "#5044e5"
+  --color-primary: #5044e5;
 }
 
+.c-space {
+  @apply sm:px-10 px-5 lg:px-15;
+}
+
+.section-spacing {
+  @apply min-h-screen mt-20 md:mt-30;
+}
+
+.nav-ul {
+  @apply flex flex-col items-center gap-4 sm:flex-row z-20;
+}
+
+.nav-link {
+  @apply text-gray-500 hover:text-black relative inline-block before:content-[''] before:absolute before:-bottom-1 before:left-0  before:w-full before:h-[1.5px] before:bg-primary before:origin-left before:scale-x-0 before:transition-transform before:duration-300 hover:before:scale-x-100;
+}

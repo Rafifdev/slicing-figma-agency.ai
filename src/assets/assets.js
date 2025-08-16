@@ -1,21 +1,21 @@
 // icoon
-import logo from './icon/logo.svg'
-import arrow_icon from './icon/arrow_icon.svg'
-import ads_icon from './icon/ads_icon.svg'
-import content_icon from './icon/content_icon.svg'
-import marketing_icon from './icon/marketing_icon.svg'
-import social_icon from './icon/social_icon.svg'
-import menu_icon from './icon/menu_icon.svg'
-import close_icon from './icon/close_icon.svg'
-import email_icon from './icon/email_icon.svg'
-import person_icon from './icon/person_icon.svg'
-import facebook_icon from './icon/facebook_icon.svg'
-import twitter_icon from './icon/twitter_icon.svg'
-import instagram_icon from './icon/instagram_icon.svg'
-import linkedin_icon from './icon/linkedin_icon.svg'
-import menu_icon_dark from './icon/menu_icon_dark.svg'
-import sun_icon from './icon/sun_icon.svg'
-import moon_icon from './icon/moon_icon.svg'
+import logo from './logo.svg'
+import arrow_icon from './arrow_icon.svg'
+import ads_icon from './ads_icon.svg'
+import content_icon from './content_icon.svg'
+import marketing_icon from './marketing_icon.svg'
+import social_icon from './social_icon.svg'
+import menu_icon from './menu_icon.svg'
+import close_icon from './close_icon.svg'
+import email_icon from './email_icon.svg'
+import person_icon from './person_icon.svg'
+import facebook_icon from './facebook_icon.svg'
+import twitter_icon from './twitter_icon.svg'
+import instagram_icon from './instagram_icon.svg'
+import linkedin_icon from './linkedin_icon.svg'
+import menu_icon_dark from './menu_icon_dark.svg'
+import sun_icon from './sun_icon.svg'
+import moon_icon from './moon_icon.svg'
 
 // logo & image
 import airbnb_logo from './airbnb_logo.svg'
@@ -70,8 +70,6 @@ const assets = {
   moon_icon
 }
 
-export default assets
-
 export const teamData = [
   { name: 'Haley Carter', title: 'CEO & founder', image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200' },
   { name: 'James Walker', title: 'Ads manager', image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200' },
@@ -82,3 +80,5 @@ export const teamData = [
   { name: 'Megan Brooks', title: 'Performance manager', image: 'https://randomuser.me/api/portraits/women/12.jpg' },
   { name: 'Amber Foster', title: 'Senior writer', image: 'https://randomuser.me/api/portraits/women/14.jpg' },
 ]
+
+export default assets
