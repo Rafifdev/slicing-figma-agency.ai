@@ -1,9 +1,9 @@
 import { useState } from "react";
 import assets from "../assets/assets";
 import { motion } from "motion/react";
-import ThemeToggleBtn from "./ThemeToggleBtn";
+import ThemeToggleBtn from "../components/ThemeToggleBtn";
 
-const NavItem = ["Home", "Services", "Our Work", "Testimonial"];
+const NavItem = ["Home", "Services", "Our Work", "Contact US"];
 
 const Navigation = () => {
   return (
@@ -24,7 +24,7 @@ const Navbar = ({ theme, setTheme }) => {
   return (
     <div className="fixed inset-x-0 top-0 backdrop-blur-xl font-medium bg-white/50 z-20 dark:bg-gray-900 w-full">
       <div className="mx-auto c-space max-w-7xl">
-        <div className="flex justify-between items-center py-5">
+        <div className="flex justify-between items-center py-4">
           <img
             src={theme == "dark" ? assets.logo_dark : assets.logo}
             alt="logo"

@@ -20,7 +20,7 @@ const ThemeToggleBtn = ({ theme, setTheme }) => {
 
   return (
     <motion.button
-      className={`flex items-center justify-center p-1.5 size-10 border border-black/50 ${theme === "dark" && "border-white"} rounded-full cursor-pointer`}
+      className={`flex items-center justify-center p-1.5 size-8.5 border border-black/50 ${theme === "dark" && "border-white"} rounded-full cursor-pointer`}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
