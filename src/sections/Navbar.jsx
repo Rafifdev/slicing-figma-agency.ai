@@ -22,7 +22,7 @@ const Navigation = () => {
 const Navbar = ({ theme, setTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="fixed inset-x-0 top-0 backdrop-blur-xl font-medium bg-white/50 z-20 dark:bg-gray-900 w-full">
+    <section className="fixed inset-x-0 top-0 backdrop-blur-xs font-medium bg-white/50 z-20 dark:bg-dark/80 w-full">
       <div className="mx-auto c-space max-w-7xl">
         <div className="flex justify-between items-center py-4">
           <img
@@ -69,7 +69,7 @@ const Navbar = ({ theme, setTheme }) => {
           </nav>
         </motion.div>
       )}
-    </div>
+    </section>
   );
 };
 

@@ -22,7 +22,7 @@ const ReviewCard = ({ logo }) => {
 
 export default function Trusted() {
   return (
-    <>
+    <section className="c-space">
     <p className="text-center my-5 sm:my-10 text-gray-600 dark:text-white">Trusted by Leading Companies</p>
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
         <Marquee pauseOnHover className="[--duration:20s]">
@@ -30,9 +30,9 @@ export default function Trusted() {
             <ReviewCard key={index} logo={logo} />
           ))}
         </Marquee>
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-[10%] bg-gradient-to-r from-white dark:from-black"></div>
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-[10%] bg-gradient-to-l from-white dark:from-black"></div>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-[10%] bg-gradient-to-r from-white dark:from-dark"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-[10%] bg-gradient-to-l from-white dark:from-dark"></div>
       </div>
-    </>
+    </section>
   );
 }

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Navbar from "./sections/Navbar";
-import CustomCursor from "./components/CustomCursor";
 import Hero from "./sections/Hero";
 import Trusted from "./sections/Trusted";
+import Services from "./sections/Services";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -12,13 +12,12 @@ const App = () => {
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />
       <Trusted />
+      <Services />
       <div className="min-h-screen"></div>
-      {/* Services */}
       {/* Our Work */}
       {/* Team */}
       {/* Contacs */}
       {/* Footer */}
-      <CustomCursor />
     </div>
   );
 };

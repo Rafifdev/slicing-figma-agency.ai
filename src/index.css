@@ -11,6 +11,8 @@ html {
 
 @theme {
   --color-primary: #5044e5;
+  --color-dark: #111111;
+  --color-dark-2: #1A1A1A;
   --animate-marquee: marquee var(--duration, 40s) linear infinite;
   --animate-marquee-vertical: marquee-vertical var(--duration, 40s) linear
     infinite;
