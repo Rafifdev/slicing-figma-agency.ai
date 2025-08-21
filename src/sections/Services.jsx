@@ -1,5 +1,6 @@
 import assets from "../assets/assets";
 import { Card } from "../components/Card";
+import SectionHeader from "../components/SectionHeader";
 
 const ServicesData = [
   {
@@ -38,10 +39,10 @@ const CardItems = () => {
               className="bg-white dark:bg-dark-2 border-8 border-gray-100 dark:border-gray-600 rounded-full"
             />
             <div className="ml-8">
-              <h3 className="font-bold text-gray-800 mb-3 dark:text-white">
+              <h3 className="font-bold text-gray-700 mb-3 dark:text-white">
                 {data.title}
               </h3>
-              <p className="text-gray-600 text-sm dark:text-white/70">
+              <p className="text-gray-700/60 text-sm dark:text-white/70">
                 {data.description}
               </p>
             </div>
@@ -55,16 +56,21 @@ const CardItems = () => {
 const Services = () => {
   return (
     <section className="relative text-center mt-15 sm:mt-30 c-space mx-auto overflow-hidden sm:overflow-visible">
-      <img src={assets.bgImage2} className="absolute sm:-top-55 sm:-left-70 -z-1 dark:hidden "/>
-      <img src={assets.bgImage1} className="absolute bottom-20 right-40 block sm:hidden -z-1 dark:hidden "/>
-      <h2 className="text-gray-700 text-4xl sm:text-5xl dark:text-white">
-        How can we help?
-      </h2>
-      <p className="mt-10 sm:font-normal max-w-lg px-2 sm:px-0 text-center mx-auto text-gray-500 dark:text-white/70">
-        From strategy to execution, we craft digital solutions that move your
-        business forward.
-      </p>
-      <div className="flex flex-col sm:grid sm:grid-cols-2 gap-10 mt-10 sm:mt-20 px-5">
+      <img
+        src={assets.bgImage2}
+        className="absolute sm:-top-55 sm:-left-70 -z-1 dark:hidden "
+      />
+      <img
+        src={assets.bgImage1}
+        className="absolute bottom-20 -left-50 block sm:hidden -z-1 dark:hidden "
+      />
+      <SectionHeader
+        title="How can we help?"
+        subTitle="From strategy to execution, we craft digital solutions that move your
+        business forward."
+        align="center"
+      />
+      <div className="flex flex-col sm:grid sm:grid-cols-2 gap-10 px-5">
         <CardItems />
       </div>
     </section>

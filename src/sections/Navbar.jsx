@@ -44,7 +44,7 @@ const Navbar = ({ theme, setTheme }) => {
             </motion.button>
             {/* Mobile */}
             <motion.button
-              className="w-8 sm:hidden "
+              className="w-8 sm:hidden"
               onClick={() => setIsOpen(!isOpen)}
               whileTap={{ scale: 0.9 }}
             >
@@ -59,12 +59,12 @@ const Navbar = ({ theme, setTheme }) => {
       </div>
       {isOpen && (
         <motion.div
-          className="block text-center sm:hidden"
+          className="block text-center sm:hidden md:hidden"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <nav className="pb-10 ">
+          <nav className="pb-10">
             <Navigation />
           </nav>
         </motion.div>

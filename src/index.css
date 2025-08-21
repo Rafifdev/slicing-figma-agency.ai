@@ -11,7 +11,7 @@ html {
 
 @theme {
   --color-primary: #5044e5;
-  --color-dark: #111111;
+  --color-dark: #151515;
   --color-dark-2: #1A1A1A;
   --animate-marquee: marquee var(--duration, 40s) linear infinite;
   --animate-marquee-vertical: marquee-vertical var(--duration, 40s) linear
@@ -27,7 +27,7 @@ html {
 }
 
 .nav-ul {
-  @apply flex flex-col items-center gap-5 sm:flex-row z-20;
+  @apply flex flex-col items-center gap-5 sm:flex-row  z-20;
 }
 
 .nav-link {
@@ -39,7 +39,7 @@ html {
 }
 
 .btn {
-  @apply text-white bg-primary rounded-full font-medium py-2 text-sm px-6;
+  @apply text-white bg-primary rounded-full font-medium py-2.5 text-sm px-6;
 }
 
 /* Custom Background */

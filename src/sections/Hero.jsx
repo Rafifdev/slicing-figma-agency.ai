@@ -1,5 +1,4 @@
 import assets from "../assets/assets";
-import { Typewriter } from "../components/Typewriter";
 
 const Hero = () => {
   return (

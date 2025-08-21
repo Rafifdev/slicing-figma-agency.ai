@@ -3,6 +3,9 @@ import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import Trusted from "./sections/Trusted";
 import Services from "./sections/Services";
+import OurWork from "./sections/OurWork";
+import Team from "./sections/Team";
+import Contacts from "./sections/Contacts";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -13,10 +16,10 @@ const App = () => {
       <Hero />
       <Trusted />
       <Services />
+      <OurWork />
+      <Team />
+      <Contacts />
       <div className="min-h-screen"></div>
-      {/* Our Work */}
-      {/* Team */}
-      {/* Contacs */}
       {/* Footer */}
     </div>
   );
